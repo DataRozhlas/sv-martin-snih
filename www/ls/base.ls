@@ -44,6 +44,6 @@ container.append \div
     ..append \div
       ..attr \class \dot
       ..style \left -> "#{scaleX ...}%"
-    ..append \div
-      ..attr \class \label-year
-      ..html (.date.getFullYear!)
+      ..append \div
+        ..attr \class \label-year
+        ..html ({date, name}) -> "<b>#{date.getFullYear!}:</b> #{date.getDate!}. #{date.getMonth! + 1}., #{name}"
