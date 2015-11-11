@@ -8,6 +8,7 @@ stations =
   "PRIBYSLAV, EZ": "Přibyslav"
   "PRIMDA, EZ": "Přimda"
   "RUZYNE, EZ": "Ruzyně"
+  "TURANY, EZ": "Tuřany"
 data = dsv.parse ig.data.data, (row) ->
   [year, month, day] = row.date.split "-" .map parseInt _, 10
   row.dateString = row.date
