@@ -47,3 +47,6 @@ container.append \div
       ..append \div
         ..attr \class \label-year
         ..html ({date, name}) -> "<b>#{date.getFullYear!}:</b> #{date.getDate!}. #{date.getMonth! + 1}., #{name}"
+  ..append \div
+    ..attr \class \label-max
+    ..html "11. 11.: Svatý Martin&nbsp;&nbsp;›"
